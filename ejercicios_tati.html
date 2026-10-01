@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mis ejercicios - Tati</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f7f4f8; color: #302b33;
+  }
+  .wrap { max-width: 760px; margin: auto; padding: 24px 16px 50px; }
+  header {
+    background: #fff; border-radius: 22px; padding: 24px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.06); margin-bottom: 18px;
+  }
+  h1 { margin: 0 0 8px; font-size: 28px; }
+  .intro { color: #716873; margin: 0; line-height: 1.5; }
+  .card {
+    background: #fff; border-radius: 20px; padding: 20px;
+    margin: 16px 0; box-shadow: 0 4px 16px rgba(0,0,0,.05);
+  }
+  h2 { font-size: 20px; margin: 0 0 12px; }
+  h3 { font-size: 16px; margin: 18px 0 8px; }
+  .steps { padding-left: 22px; line-height: 1.7; }
+  textarea {
+    width: 100%; min-height: 82px; border: 1px solid #ddd5df;
+    border-radius: 12px; padding: 12px; font: inherit; resize: vertical;
+    background: #fcfbfc;
+  }
+  label { display:block; margin: 12px 0 6px; font-weight: 600; font-size: 14px; }
+  .quote {
+    background: #f1eaf3; border-radius: 14px; padding: 14px;
+    font-weight: 600; line-height: 1.5;
+  }
+  button {
+    border: 0; border-radius: 12px; padding: 12px 16px;
+    font-weight: 700; cursor: pointer; margin: 5px;
+  }
+  .primary { background:#5b4165; color:white; }
+  .secondary { background:#eee8ef; color:#3b303f; }
+  .actions { text-align:center; margin-top:20px; }
+  .small { font-size: 13px; color:#776e79; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>🌷 Mis ejercicios</h1>
+  <p class="intro">Una versión simple para usar cuando necesites parar, ordenar lo que sentís y elegir qué hacer.</p>
+</header>
+
+<section class="card">
+  <h2>1. 🛑 STOP — cuando estoy muy alterada</h2>
+  <ol class="steps">
+    <li><b>Paro.</b></li>
+    <li><b>Me alejo</b> un momento de la situación.</li>
+    <li><b>Observo:</b> qué pienso, qué siento y qué ganas tengo de hacer.</li>
+    <li><b>Espero</b> antes de actuar.</li>
+  </ol>
+  <div class="quote">¿Esto me ayuda también mañana o solamente me alivia ahora?</div>
+  <label>¿Qué está pasando?</label><textarea id="stop1"></textarea>
+  <label>¿Qué siento?</label><textarea id="stop2"></textarea>
+  <label>¿Qué tengo ganas de hacer?</label><textarea id="stop3"></textarea>
+</section>
+
+<section class="card">
+  <h2>2. 🧠 Separar pensamiento de acción</h2>
+  <p>En vez de “No puedo con esto”, probá:</p>
+  <div class="quote">“Estoy teniendo el pensamiento de que no puedo con esto.”</div>
+  <label>¿Qué me está diciendo mi cabeza?</label><textarea id="act1"></textarea>
+  <label>¿Qué estoy sintiendo?</label><textarea id="act2"></textarea>
+  <label>¿Tengo que actuar ahora?</label><textarea id="act3"></textarea>
+  <label>¿Puedo esperar 10–20 minutos?</label><textarea id="act4"></textarea>
+</section>
+
+<section class="card">
+  <h2>3. 👧 Tati impulsiva vs. 👩 Tati adulta</h2>
+  <h3>Tati impulsiva</h3>
+  <label>¿Qué quiere hacer ahora?</label><textarea id="imp1"></textarea>
+  <label>¿Qué teme?</label><textarea id="imp2"></textarea>
+  <label>¿Qué hace cuando se siente rechazada?</label><textarea id="imp3"></textarea>
+
+  <h3>Tati adulta</h3>
+  <label>¿Qué podría hacer diferente?</label><textarea id="adult1"></textarea>
+  <label>¿Qué puede aceptar aunque no le guste?</label><textarea id="adult2"></textarea>
+  <label>¿Qué decide NO hacer?</label><textarea id="adult3"></textarea>
+  <label>¿Cómo puede protegerse sin reaccionar impulsivamente?</label><textarea id="adult4"></textarea>
+
+  <div class="quote">¿A cuál de las dos estoy alimentando con lo que voy a hacer?</div>
+</section>
+
+<section class="card">
+  <h2>4. 🌱 La Tati que quiero ser</h2>
+  <label>¿Cómo maneja un rechazo?</label><textarea id="future1"></textarea>
+  <label>¿Cómo maneja la ansiedad?</label><textarea id="future2"></textarea>
+  <label>¿Qué tipo de relaciones acepta?</label><textarea id="future3"></textarea>
+  <label>¿Cómo se trata a sí misma?</label><textarea id="future4"></textarea>
+  <label>¿De qué estaría orgullosa?</label><textarea id="future5"></textarea>
+  <label>¿Qué pequeña cosa puedo hacer esta semana para acercarme a ella?</label><textarea id="future6"></textarea>
+</section>
+
+<section class="card">
+  <h2>5. ❤️ Cuando me pasa algo fuerte</h2>
+  <label>Lo que pasó</label><textarea id="strong1"></textarea>
+  <label>Lo que estoy sintiendo</label><textarea id="strong2"></textarea>
+  <label>Lo que tengo ganas de hacer</label><textarea id="strong3"></textarea>
+  <label>Si lo hago, ¿qué alivio tendría ahora?</label><textarea id="strong4"></textarea>
+  <label>¿Qué podría pasar mañana o la semana que viene?</label><textarea id="strong5"></textarea>
+  <label>¿Qué haría la Tati adulta?</label><textarea id="strong6"></textarea>
+  <label>¿Qué valor quiero cuidar?</label><textarea id="strong7"></textarea>
+  <label>¿Cuál es la acción más pequeña que puedo hacer ahora?</label><textarea id="strong8"></textarea>
+</section>
+
+<section class="card">
+  <h2>🌷 Para recordar</h2>
+  <div class="quote">
+    No todo lo que siento necesita una acción.<br><br>
+    Una emoción intensa no es una emergencia.<br><br>
+    Un “no” no significa necesariamente rechazo.<br><br>
+    Mi valor no depende de que alguien me elija.<br><br>
+    Puedo sentir una urgencia sin obedecerla.
+  </div>
+</section>
+
+<div class="actions">
+  <button class="primary" onclick="saveData()">Guardar</button>
+  <button class="primary" onclick="downloadAnswers()">Descargar mis respuestas</button>
+  <button class="secondary" onclick="clearData()">Borrar todo</button>
+  <p class="small">Los datos se guardan en este dispositivo/navegador.</p>
+</div>
+</div>
+
+<script>
+const fields = [...document.querySelectorAll("textarea")];
+fields.forEach(f => {
+  const saved = localStorage.getItem("tati_" + f.id);
+  if (saved !== null) f.value = saved;
+  f.addEventListener("input", () => localStorage.setItem("tati_" + f.id, f.value));
+});
+function saveData() {
+  fields.forEach(f => localStorage.setItem("tati_" + f.id, f.value));
+  alert("Guardado 💜");
+}
+function downloadAnswers() {
+  saveData();
+  let text = "MIS EJERCICIOS — TATI\\n\\n";
+  fields.forEach(f => {
+    const label = f.previousElementSibling ? f.previousElementSibling.innerText : f.id;
+    text += label + ":\\n" + (f.value || "(sin respuesta)") + "\\n\\n";
+  });
+  const blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "mis_respuestas_tati.txt";
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+function clearData() {
+  if (!confirm("¿Borrar todas las respuestas?")) return;
+  fields.forEach(f => { localStorage.removeItem("tati_" + f.id); f.value = ""; });
+}
+</script>
+</body>
+</html>
